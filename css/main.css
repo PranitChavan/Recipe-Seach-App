@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  color: red;
+}
+
+body {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 50em;
+  box-shadow: 0 0 10px 2px #3333331a;
+  border-radius: 3px;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.dropdown {
+  padding: 2.5rem;
+  box-shadow: 0 0 10px 2px #3333331a;
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  height: 3rem;
+  border: none;
+  background-color: #eee;
+}
+
+.search__input[type='text'] {
+  padding-left: 1rem;
+}
+
+.search__icon {
+  margin-left: 1rem;
+  color: #8a818d;
+}
+
+.fav {
+  background-color: #9695ed;
+  padding: 2rem;
+}
+
+.fav__heading {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.fav__meals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fav__meals li {
+  list-style: none;
+  width: 75px;
+  margin: 5px;
+  padding-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fav__meals li .clear {
+  position: absolute;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 2rem;
+  top: 1.2rem;
+  left: 6rem;
+  background-color: transparent;
+  display: none;
+}
+
+.fav__meals li:hover .clear {
+  display: block;
+}
+
+.fav__meals-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px 2px #3333331a;
+}
+
+.fav__meals-name {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.meal {
+  box-shadow: 0 0 10px 2px #3333331a;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+.meal__img {
+  width: 100%;
+}
+
+.meal__body {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.meal__name {
+  font-size: 1.5rem;
+}
+
+.meal .like-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.meal__header {
+  position: relative;
+}
+
+.meal__header .random {
+  position: absolute;
+  top: 2rem;
+  background-color: #fff;
+  padding: 0.25rem 1rem;
+  font-size: 1.4rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.modal__popup {
+  background-color: #fff;
+  max-width: 60rem;
+  padding: 2rem;
+  width: 100%;
+  overflow: auto;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.modal__header {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.modal__header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.modal__receipi {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.modal__poster {
+  display: flex;
+  justify-content: center;
+}
+
+.modal__img {
+  width: 40rem;
+  margin-bottom: 3rem;
+}
+
+.modal h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal__ingredients {
+  list-style: disc;
+  font-size: 2rem;
+  margin-left: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */

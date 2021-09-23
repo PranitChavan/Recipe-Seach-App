@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <form action="" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search for recipes"
+          />
+          <span class="search__icon"><i class="fas fa-search fa-2x"></i></span>
+        </form>
+      </header>
+
+      <div class="fav">
+        <h2 class="fav__heading">Favourite Meals</h2>
+        <ul class="fav__meals"></ul>
+      </div>
+
+      <div class="dropdown">
+        <div class="meals"></div>
+      </div>
+
+      <div class="modal hidden"></div>
+    </div>
+  </body>
+</html>

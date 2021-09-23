@@ -1,0 +1,170 @@
+.search {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    height: 3rem;
+    border: none;
+    background-color: #eee;
+
+    &[type='text'] {
+      padding-left: 1rem;
+    }
+  }
+
+  &__icon {
+    margin-left: 1rem;
+    color: rgb(138, 129, 141);
+  }
+}
+
+.fav {
+  background-color: #9695ed;
+  padding: 2rem;
+
+  &__heading {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  &__meals {
+    & li {
+      list-style: none;
+      width: 75px;
+      margin: 5px;
+      padding-top: 2rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & .clear {
+        position: absolute;
+        border: none;
+        outline: none;
+        color: #000;
+        font-size: 2rem;
+        top: 1.2rem;
+        left: 6rem;
+        background-color: transparent;
+        display: none;
+      }
+
+      &:hover {
+        .clear {
+          display: block;
+        }
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__meals-img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px 2px #3333331a;
+  }
+
+  &__meals-name {
+    text-align: center;
+    font-size: 1.2rem;
+    // margin-left: 3rem;
+  }
+}
+
+.meal {
+  box-shadow: 0 0 10px 2px #3333331a;
+  margin-bottom: 2.2rem;
+  position: relative;
+  &__img {
+    width: 100%;
+  }
+
+  &__body {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+  }
+
+  .like-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  &__header {
+    position: relative;
+    .random {
+      position: absolute;
+      top: 2rem;
+      background-color: #fff;
+      padding: 0.25rem 1rem;
+      font-size: 1.4rem;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+.modal {
+  &__popup {
+    background-color: #fff;
+    max-width: 60rem;
+    padding: 2rem;
+    width: 100%;
+    overflow: auto;
+    max-height: 100vh;
+    overflow: auto;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    display: flex;
+    & h1 {
+      flex-grow: 1;
+      text-align: center;
+    }
+    & i {
+    }
+  }
+
+  &__receipi {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__poster {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__ingredients {
+    list-style: disc;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+  }
+}
